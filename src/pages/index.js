@@ -13,7 +13,7 @@ function Home(props){
 
     return (
         <html>
-            <Navbar/>
+            <Navbar title='KONAI'/>
             <body>
                 <Videos videos = {props.videos}/>
             </body>

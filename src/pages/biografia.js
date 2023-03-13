@@ -7,7 +7,7 @@ import Footer from "../components/Footer"
 export default function biografia(){
    return(
         <>
-        <Navbar></Navbar>
+        <Navbar title='KONAI BIOGRAFIA'></Navbar>
         <div className={Biografia.biografiaHead}> 
             <div className={Biografia.Rafaimg}>
                 <img src={Rafa.src} ></img>
