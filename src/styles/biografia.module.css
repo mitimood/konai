@@ -1,0 +1,116 @@
+.Rafaimg{
+    display: flex;    
+    justify-content:space-evenly;
+    align-items: center;
+
+}
+
+.Rafaimg img{
+    width: 50VH;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-left: 20vw;
+}
+
+.biografiaHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rafaBack{
+    margin-right: 10%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200%;
+    justify-content: center;
+}
+
+.kamaitachiHead{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 540%;
+    color: #000; 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(77, 5, 5);
+}
+
+.biografiaTitle{
+    font-size: 400%;
+    color: white;
+    text-shadow: white;
+    text-shadow: 0px 0px 20px rgb(255, 255, 255);;
+
+}
+
+.txt{
+    margin: 50px 100px;
+    font-size: 200%;
+    text-align: center;
+    color: rgb(150, 150, 150);
+}
+
+.txtlist{
+    text-align: start;
+
+}
+
+
+
+
+@media (max-width: 540px) {
+    .Rafaimg{
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .Rafaimg img{
+        width: 60%;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+    
+    .rafaBack{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .kamaitachiHead{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 340%;
+        color: #000; 
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgb(77, 5, 5);
+    }
+    
+    .biografiaTitle{
+        font-size: 100%;
+        color: white;
+        text-shadow: white;
+        text-shadow: 0px 0px 20px rgb(255, 255, 255);;
+    
+    }
+    
+    .txt{
+        margin: 30px 20px;
+        font-size: 120%;
+        text-align: center;
+        color: rgb(150, 150, 150);
+    }
+
+    .txtlist{
+        text-align: start;
+    
+    }
+
+    .txtlist li{
+        margin-top: 20px;
+    
+    }
+    
+
+}

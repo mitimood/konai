@@ -1,0 +1,63 @@
+import React, {useState} from 'react'
+import carouselCss from "./carousel.module.css"
+import {BsFillArrowLeftCircleFill} from "react-icons/bs"
+import {BsFillArrowRightCircleFill} from "react-icons/bs"
+import {AiFillCloseCircle} from "react-icons/ai"
+import IframaPopup from "../Videos/IframaPopup"
+
+
+function Carousel(props) {
+    const videos = props.videos
+    const [curImageMid, setCurImageMid] = useState(0)
+    const [embVisb, setEmbVisb] = useState(false)
+
+    return (
+        <div className={carouselCss.main}>
+            <div className={carouselCss.innerLeft} onClick={()=>setCurImageMid(dcsPosition(videos, curImageMid))} style={{backgroundImage: `url(${videos[dcsPosition(videos, curImageMid)].thumb})`}}><BsFillArrowLeftCircleFill style={{color:'white', fontSize:'300%', opacity:'60%'}}/></div>
+            <div className={carouselCss.innerMid} onClick={()=> !embVisb && setEmbVisb(true)} style={{
+                backgroundImage: `url(${videos[curImageMid].thumb})`,
+                alignItems: embVisb ? 'center' : 'flex-end'
+
+                }}>
+                <div style={
+                    {
+                        display: embVisb ? "flex" : 'none',
+                        backgroundColor: '#222222x',
+                        width:"80%",
+                        height:"80%",
+                        justifyContent:'center',
+                        flexDirection:'column'
+                    }
+                }>
+                    <AiFillCloseCircle onClick={()=> {setEmbVisb(false); console.log(embVisb)}} style={{
+                        marginLeft:'95%',
+                        marginRight:'1%',
+                        marginTop: '1%',
+                        marginBottom: '0'
+                    }} />
+                  <IframaPopup trigger = {embVisb} curImageMid={curImageMid} videos={videos}/>
+                </div>
+                <div style={{display: embVisb ? 'none': 'flex'}}>{videos[curImageMid].title}</div>
+                </div>
+            <div className={carouselCss.innerRight} onClick={()=>setCurImageMid(addPosition(videos, curImageMid))} style={{backgroundImage: `url(${videos[addPosition(videos, curImageMid)].thumb})`}}><BsFillArrowRightCircleFill style={{color:'white', fontSize:'300%', opacity:'60%'}}/></div >
+        </div>
+    )
+}
+
+export default Carousel
+
+function addPosition(array, curPosition){
+    if( curPosition + 2 >= array.length ){
+        return 0
+    }else{
+        return curPosition + 1
+    }
+}
+
+function dcsPosition(array, curPosition){
+    if( curPosition - 1 < 0 ){
+        return array.length - 1
+    }else{
+        return curPosition - 1
+    }
+}

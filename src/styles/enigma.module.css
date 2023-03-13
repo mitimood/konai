@@ -1,0 +1,86 @@
+.background{
+    height:95vh;
+    width:100VH;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-y: center;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 100%;
+}
+
+.bot1{
+    margin-left: 38%;
+
+    width: 15%;
+    height: 25%;
+    transform: rotate(30deg);
+    margin-bottom: 5%;
+
+}
+
+.bot2{
+    width: 15%;
+    height: 20%;
+    margin-left: 0%;
+    transform: rotate(25deg);
+
+}
+
+.bot3{
+    margin-top: 20%;
+    margin-left: 10%;
+    width: 15%;
+    height: 30%;
+    transform: rotate(25deg);
+
+}
+
+.bot4{
+    margin-right: 8%;
+    margin-left: 10%;
+    margin-top: 30%;
+    width: 15%;
+    height: 35%;
+    transform: rotate(15deg);
+}
+
+.desafio3{
+
+    backdrop-filter: blur(50px);
+    background-image:url(/imagens/fundocenario2.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    display:grid;
+    height: 90vw;
+
+}
+
+.desafio3Back{
+
+    background-image:url(/imagens/fundocenario.png);
+    background-size: cover;
+    height:100vh;
+    width:100Vw;
+    background-size:contain;
+    background-position-y: center;
+    background-position-x: center;
+
+}
+
+.bichoPapaoA{
+
+}
+
+@media (max-width: 540px) {
+    .background{
+        height:100VH;
+        width:50VH;
+
+    }
+    
+}

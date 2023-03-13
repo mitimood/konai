@@ -1,0 +1,100 @@
+.main{
+    display: flex;
+    height: 50vw;
+    width: 98.2vw;
+    align-items: center;
+}
+
+.innerMid{
+    height: 100%;
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    font-size:2vw;
+    color:white;
+    display: flex;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2f2f2f;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.innerLeft{
+    height: 70%;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 50%;
+
+}
+
+.innerRight{
+    height: 70%;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 50%;
+
+}
+
+.date{
+    font-size: 200%;
+    background-color: hsl(0, 0%, 0%, 60%);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.title{
+    text-align: center;
+    font-size: 200%;
+    font-family:sans-serif;
+    color: rgb(182, 182, 182);
+    margin-bottom: 10px;
+    text-shadow: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+@media (max-width: 540px) {
+
+.innerMid{
+    
+height: 100%;
+width: 150%;
+}
+.main{
+    height: 100vw;
+    width: 98.9vw;
+}
+
+.date{
+    font-size: 300%;
+
+}
+}
